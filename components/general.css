@@ -5,6 +5,8 @@
   --red: #ff0000;
   --white: #ffffff;
   --green: #008000;
+  --yellow: #ffff00;
+  --gray: #808080;
 }
 
 *,
@@ -17,7 +19,7 @@
 
 body {
   font-family: system-ui;
-  background-color: var(--black);
+  background: linear-gradient(to right, #0a192f, #00b4db);
   color: var(--black);
   display: flex;
   flex-direction: column;
