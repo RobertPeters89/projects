@@ -1,14 +1,66 @@
-:root {
-  /* colors */
-  --black: #000000;
-  --white: #ffffff;
-  --yellow: #ffff00;
+@import "components/general.css";
+@import "components/nav.css";
+
+/* Hauptbereich und Karten-Layout */
+main {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 15px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+/* Jede Frage als eigenständige Karte (wie auf der Skizze) */
+article {
+  background-color: var(--white);
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+  position: relative; /* Wichtig für das Bookmark-Icon oben rechts */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Frage & Antwort Textausrichtung */
+article h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Das Bookmark-Icon oben rechts in jeder Karte */
+article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 24px;
+  height: 32px;
+  background-color: #333333;
+  /* Erzeugt die typische Bookmark-Einkerbung unten */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);
+}
+
+/* Tags (html, css, flexbox) unten links */
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.tag {
+  background-color: #e0e0e0;
+  border: 1px solid #999999;
+  border-radius: 15px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: #333;
 }
