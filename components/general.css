@@ -19,7 +19,7 @@
 
 body {
   font-family: system-ui;
-  background: linear-gradient(to right, #0a192f, #00b4db);
+  background-color: var(--white);
   color: var(--black);
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ body {
 
 header {
   background-color: var(--blue);
-  border-bottom: 5px solid var(--red);
+  border-bottom: 5px solid var(--black);
   text-align: center;
   padding: 15px 0;
   position: sticky;
