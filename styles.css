@@ -1,9 +1,4 @@
 @import "components/general.css";
 @import "components/nav.css";
 @import "components/article.css";
-
-.profile-card {
-  background-color: var(--white);
-  border: 3px solid var(--black);
-  border-radius: 5px;
-}
+@import "components/profile.css";

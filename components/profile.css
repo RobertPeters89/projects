@@ -1,0 +1,117 @@
+.profile-card {
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  border-radius: 8px;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar img {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--black);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-about h3,
+.profile-settings h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.profile-about p {
+  font-size: 14px;
+  text-align: left;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.profile-counters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.counter-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-weight: bold;
+  background-color: var(--white);
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gray);
+  border: 2px solid var(--black);
+  border-radius: 34px;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--black);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: var(--green);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+  background-color: var(--white);
+}
