@@ -21,15 +21,15 @@ article p {
 }
 
 /* Das Bookmark-Icon oben rechts in jeder Karte */
-article::after {
-  content: "";
+.bookmark {
   position: absolute;
   top: 0;
   right: 20px;
   width: 24px;
   height: 32px;
   background-color: var(--gray);
-  /* Erzeugt die typische Bookmark-Einkerbung unten */
+  border: none;
+  cursor: pointer;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);
 }
 
