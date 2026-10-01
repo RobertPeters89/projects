@@ -9,10 +9,6 @@ bookmarkButton.addEventListener("click", () => {
 });
 
 showAnswerButton.addEventListener("click", () => {
-  answer.classList.toggle("hidden");
-});
-
-/* showAnswerButton.addEventListener("click", () => {
   if (answer.classList.contains("hide")) {
     answer.classList.remove("hide");
     showAnswerButton.textContent = "Hide Answer";
@@ -20,4 +16,4 @@ showAnswerButton.addEventListener("click", () => {
     answer.classList.add("hide");
     showAnswerButton.textContent = "Show Answer";
   }
-}); Muss mit einem Coach besprochen werden*/
+});
