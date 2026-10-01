@@ -18,6 +18,7 @@ article p {
   text-align: center;
   margin-bottom: 20px;
   color: green;
+  font-size: large;
 }
 
 /* Das Bookmark-Icon oben rechts in jeder Karte */
@@ -31,6 +32,10 @@ article p {
   border: none;
   cursor: pointer;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);
+}
+
+.bookmark.active {
+  background-color: var(--red);
 }
 
 .tags {
@@ -50,7 +55,7 @@ article p {
   color: var(--black);
 }
 
-.answer.hidden {
+.hide {
   display: none;
 }
 

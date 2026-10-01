@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -21,6 +22,11 @@
           </a>
         </li>
         <li>
+          <a href="form.html"
+            ><img src="assets/file-plus-corner.svg" alt=""
+          /></a>
+        </li>
+        <li>
           <a href="profile.html"><img src="assets/user.svg" alt="" /></a>
         </li>
       </ul>
@@ -28,14 +34,10 @@
     <main>
       <section class="Question card">
         <article class="Question" data-id="1">
-          <button
-            class="bookmark"
-            aria-label="Bookmark"
-            aria-pressed="false"
-          ></button>
+          <button class="bookmark" data-js="bookmark"></button>
           <h2>What does CSS stand for?</h2>
-          <p class="answer hidden">Cascading Style Sheets</p>
-          <button class="quiz-btn">Show Answer</button>
+          <p class="hide" data-js="hidden-answer">Cascading Style Sheets</p>
+          <button class="quiz-btn" data-js="show-answer">Show Answer</button>
           <div class="tags">
             <span class="tag">CSS</span>
             <span class="tag">Web Development</span>
@@ -43,16 +45,12 @@
           </div>
         </article>
         <article class="Question" data-id="2">
-          <button
-            class="bookmark"
-            aria-label="Bookmark"
-            aria-pressed="false"
-          ></button>
+          <button class="bookmark" data-js="bookmark"></button>
           <h2>
             Which HTML tag is used to link an external CSS file to an HTML
             document?
           </h2>
-          <p class="answer hidden">&lt;link&gt;</p>
+          <p class="hide" data-js="hidden-answer">&lt;link&gt;</p>
           <button class="quiz-btn">Show Answer</button>
           <div class="tags">
             <span class="tag">HTML</span>
@@ -61,13 +59,9 @@
           </div>
         </article>
         <article class="Question" data-id="3">
-          <button
-            class="bookmark"
-            aria-label="Bookmark"
-            aria-pressed="false"
-          ></button>
+          <button class="bookmark" data-js="bookmark"></button>
           <h2>What is the purpose of the HTML &lt;div&gt; element?</h2>
-          <p class="answer hidden">
+          <p class="hide" data-js="hidden-answer">
             It is a container element used to group and style content together
           </p>
           <button class="quiz-btn">Show Answer</button>
@@ -78,15 +72,11 @@
           </div>
         </article>
         <article class="Question" data-id="4">
-          <button
-            class="bookmark"
-            aria-label="Bookmark"
-            aria-pressed="false"
-          ></button>
+          <button class="bookmark" data-js="bookmark"></button>
           <h2>
             Which CSS property is used to change the text color of an element?
           </h2>
-          <p class="answer hidden">&lt;color&gt;</p>
+          <p class="hide" data-js="hidden-answer">&lt;color&gt;</p>
           <button class="quiz-btn">Show Answer</button>
           <div class="tags">
             <span class="tag">CSS</span>
@@ -95,13 +85,9 @@
           </div>
         </article>
         <article class="Question" data-id="5">
-          <button
-            class="bookmark"
-            aria-label="Bookmark"
-            aria-pressed="false"
-          ></button>
+          <button class="bookmark" data-js="bookmark"></button>
           <h2>What is the default display property for most HTML elements?</h2>
-          <p class="answer hidden">&lt;block&gt;</p>
+          <p class="hide" data-js="hidden-answer">&lt;block&gt;</p>
           <button class="quiz-btn">Show Answer</button>
           <div class="tags">
             <span class="tag">CSS</span>
@@ -110,14 +96,12 @@
           </div>
         </article>
         <article class="Question" data-id="6">
-          <button
-            class="bookmark"
-            aria-label="Bookmark"
-            aria-pressed="false"
-          ></button>
+          <button class="bookmark" data-js="bookmark"></button>
           <h2>How can you center an element horizontally in CSS?</h2>
           <!-- Klasse "answer hidden" hinzugefügt -->
-          <p class="answer hidden">By setting its margin property to auto</p>
+          <p class="hide" data-js="hidden-answer">
+            By setting its margin property to auto
+          </p>
           <!-- Neuer zentrierter Button -->
           <button class="quiz-btn">Show Answer</button>
           <div class="tags">
