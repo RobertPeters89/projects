@@ -1,71 +1,74 @@
 <!doctype html>
-< lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
-<body>
-  <header>
-    <h1>Quiz App</h1>
-  </header>
-  <nav class="navbar">
-    <ul>
-      <li>
-        <a href="index.html">
-          <img src="assets/house.svg" alt="" />
-        </a>
-      </li>
-      <li>
-        <a href="bookmarks.html"><img src="assets/bookmark.svg" alt="" /></a>
-      </li>
-      <li>
-        <a href="form.html"><img src="assets/file-plus-corner.svg" alt="" /></a>
-      </li>
-      <li>
-        <div class="active"><img src="assets/user.svg" alt="" /></div>
-      </li>
-    </ul>
-  </nav>
-  <main>
-    <section class="profile-card">
-      <div class="profile-header">
-        <div class="profile-avatar"><img src="assets/user.svg" /></div>
-        <h2 class="profile-name">Max Doe</h2>
-      </div>
-
-      <div class="profile-about">
-        <h3>About me</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satius est
-          bene vivere quam diu vivere.
-        </p>
-      </div>
-
-      <div class="profile-counters">
-        <div class="counter-badge">
-          <span class="badge-icon">❓</span>
-          <span class="badge-value">12</span>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">
+            <img src="assets/house.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="bookmarks.html"><img src="assets/bookmark.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href="form.html"
+            ><img src="assets/file-plus-corner.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <div class="active"><img src="assets/user.svg" alt="" /></div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="profile-card">
+        <div class="profile-header">
+          <div class="profile-avatar"><img src="assets/user.svg" /></div>
+          <h2 class="profile-name">Max Doe</h2>
         </div>
 
-        <div class="counter-badge">
-          <span class="badge-icon">🔖</span>
-          <span class="badge-value">4</span>
+        <div class="profile-about">
+          <h3>About me</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satius est
+            bene vivere quam diu vivere.
+          </p>
         </div>
-      </div>
 
-      <div class="profile-settings">
-        <h3>Settings</h3>
-        <div class="setting-item">
-          <span>Dark Mode</span>
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-          </label>
+        <div class="profile-counters">
+          <div class="counter-badge">
+            <span class="badge-icon">❓</span>
+            <span class="badge-value">12</span>
+          </div>
+
+          <div class="counter-badge">
+            <span class="badge-icon">🔖</span>
+            <span class="badge-value">4</span>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-</body>
+
+        <div class="profile-settings">
+          <h3>Settings</h3>
+          <div class="setting-item">
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
