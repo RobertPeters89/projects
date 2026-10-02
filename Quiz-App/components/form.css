@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  border-radius: 8px;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form textarea,
+.form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font: inherit;
+  border: 2px solid var(--black);
+  border-radius: 5px;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form__counter {
+  font-size: 12px;
+  text-align: right;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+
+.form__counter--warning {
+  color: var(--red);
+}
