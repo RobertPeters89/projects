@@ -76,7 +76,6 @@ article p {
     transform 0.1s;
 }
 
-/* Kleiner Effekt beim Drüberfahren */
 .quiz-btn:hover {
   background-color: var(--black);
   transform: scale(1.05);
