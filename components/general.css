@@ -48,3 +48,7 @@ main {
   margin: 20px auto;
   padding: 0 15px;
 }
+
+body.dark-mode {
+  background-color: var(--red);
+}

@@ -21,7 +21,6 @@ article p {
   font-size: large;
 }
 
-/* Das Bookmark-Icon oben rechts in jeder Karte */
 .bookmark {
   position: absolute;
   top: 0;
@@ -59,10 +58,9 @@ article p {
   display: none;
 }
 
-/* Stylt den zentralen Button */
 .quiz-btn {
   display: block;
-  margin: 15px auto; /* Zentriert den Button horizontal */
+  margin: 15px auto;
   padding: 10px 20px;
   background-color: var(--blue);
   color: var(--white);
