@@ -1,5 +1,9 @@
 const form = document.querySelector('[data-js="form"]');
 const cardContainer = document.querySelector('[data-js="card-container"]');
+const question = document.querySelector("#question");
+const answer = document.querySelector("#answer");
+const questionCounter = document.querySelector('[data-js="question-counter"]');
+const answerCounter = document.querySelector('[data-js="answer-counter"]');
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -55,4 +59,13 @@ form.addEventListener("submit", (event) => {
   cardContainer.append(newArticle);
 
   event.target.reset();
+});
+
+question.addEventListener("input", () => {
+  questionCounter.textContent =
+    150 - question.value.length + " characters left";
+});
+
+answer.addEventListener("input", () => {
+  answerCounter.textContent = 150 - answer.value.length + " characters left";
 });
